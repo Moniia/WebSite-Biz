@@ -1,0 +1,29 @@
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 100%;
+  font-family: "DM Sans", sans-serif;
+}
+
+main {
+  width: 100%;
+}
+main li {
+  list-style-type: none;
+}
+main a {
+  color: inherit;
+  text-decoration: none;
+}
+main section, main header, main aside, main footer, main article {
+  display: flex;
+}
+main .row {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}/*# sourceMappingURL=global.css.map */

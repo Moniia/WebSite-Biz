@@ -1,0 +1,949 @@
+$flag: 91;
+
+%bt {
+    border: 2px solid red;
+}
+
+%bgt {
+    background-color: blueviolet;
+}
+
+
+.head-top {
+    width: 100%;
+    height: 100vh;
+    @if($flag==1) {@extend %bt};
+    background-image: url(../img/bench-accounting-C3V88BOoRoM-unsplash.jpg);
+    background-size: cover;
+    background-position: 20%;
+    box-shadow: inset 0 -1000px rgba(0, 0, 0, 0.277);
+
+    >.row {
+        height: 100%;
+        @if($flag==1) {@extend %bt};
+
+        >* {
+            width: 100%;
+        }
+
+        >header {
+            position: sticky;
+            height: 20%;
+            padding: 0 20px;
+
+            .row {
+                >* {
+                    height: 100%;
+                    @if($flag==1) {@extend %bt};
+
+                }
+
+                >#left-top {
+                    width: 20%;
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: center;
+
+                    >a {
+                        font-size: 24px;
+                        color: white;
+                        font-weight: 900;
+                    }
+                }
+
+                >#middle-top {
+                    width: 60%;
+                    display: flex;
+                    align-items: center;
+
+                    >ul {
+                        width: 100%;
+                        display: flex;
+                        flex-wrap: wrap;
+                        justify-content: center;
+                        @if($flag==1) {@extend %bt};
+                        >li {
+                            height: 40px;
+                            @if($flag==1) {@extend %bt};
+                            margin: 0 7px;
+
+                            >a {
+                                display: flex;
+                                height: 100%;
+                                font-weight: 500;
+                                font-size: 15px;
+                                color: white;
+                                align-items: center;
+                                text-transform: capitalize;
+                                padding: 10px;
+                                transition: 1s;
+
+                                &:hover {
+                                    color: rgba(255, 255, 255, 0.5);
+                                }
+                            }
+
+                        }
+
+                    }
+                }
+
+                >#right-top {
+                    width: 20%;
+                    display: flex;
+                    justify-content: flex-end;
+                    align-items: center;
+
+                    >a {
+                        padding: 15px 30px;
+                        background-color: #FE475C;
+                        border-radius: 5px;
+                        color: white;
+                        font-size: 16px;
+                        text-transform: capitalize;
+                    }
+                }
+
+            }
+        }
+
+        >div {
+            height: 80%;
+            justify-content: center;
+            align-items: center;
+
+            >div {
+                min-height: 100px;
+                width: 50%;
+
+                >hgroup {
+                    display: flex;
+                    justify-content: center;
+                    flex-wrap: wrap;
+
+                    >* {
+                        width: 100%;
+                        text-align: center;
+                        color: white;
+                    }
+
+                    >h1 {
+                        font-size: 59px;
+                        font-weight: 500;
+                    }
+
+                    >p {
+                        width: 80%;
+                        margin: 40px 0;
+                        font-size: 18px;
+                        line-height: 25px;
+
+                    }
+                }
+
+                .row {
+                    justify-content: center;
+
+                    >a {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        padding: 15px 30px;
+                        border-radius: 50px;
+                        margin: 0 10px;
+                        color: white;
+                        font-weight: 600;
+                        transition: .4s;
+
+                        &:first-of-type {
+                            background-color: #FE475C;
+                        }
+
+                        &:last-of-type {
+                            border: 2px solid white;
+
+                            &:hover {
+                                background-color: aliceblue;
+                                color: black;
+                            }
+                        }
+
+                    }
+                }
+
+            }
+        }
+
+    }
+}
+
+//    ----     end of top    ----
+
+
+
+.feature {
+    width: 100%;
+
+    >.row {
+        >div {
+            width: 100%;
+            min-height: 300px;
+            @if($flag==1) {@extend %bt};
+            display: flex;
+            flex-wrap: wrap;
+            align-content: center;
+
+            &:nth-of-type(1) {
+                >.row {
+                    justify-content: center;
+
+                    >div {
+                        width: 50%;
+
+                        >* {
+                            text-align: center;
+                            margin: 10px 0;
+                        }
+
+                        >h2 {
+                            font-size: 30px;
+                        }
+
+                        >p {
+                            font-size: 16px;
+                            color: rgb(43, 43, 43);
+                        }
+                    }
+                }
+            }
+
+            &:nth-of-type(2) {
+                >.row {
+                    >figure {
+                        width: 33.3333%;
+                        height: 350px;
+
+                        >img {
+                            width: 100%;
+                            height: 100%;
+                            object-fit: cover;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// end of feature--
+
+.process {
+    width: 100%;
+
+    >.row {
+        >div {
+            width: 100%;
+            @if($flag==1) {@extend %bt};
+            background-color: #F7F7F7;
+
+            &:first-of-type {
+                >h3 {
+                    text-align: center;
+                    font-size: 40px;
+                    margin: 50px 0;
+                }
+            }
+
+            &:last-of-type {
+                padding-bottom: 60px;
+
+                >.row {
+                    padding: 0 40px;
+                    justify-content: space-between;
+
+                    >hgroup {
+                        @if($flag==1) {@extend %bt};
+                        width: 362px;
+                        min-height: 107px;
+                        margin: 30px 0;
+
+                        >.row {
+                            >* {
+                                @if($flag==1) {@extend %bt};
+
+                                min-height: 40px;
+                            }
+
+                            >span {
+                                font-size: 30px;
+                                color: #FE475C;
+                                width: 13%;
+                                height: 100%;
+                            }
+
+                            >div {
+                                width: 80%;
+                                height: 100%;
+
+                                >p {
+                                    margin-top: 20px 0;
+                                    color: #333333;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// end of process----
+
+.team {
+    >.row {
+        >div {
+            @if($flag==1) {@extend %bt};
+            width: 100%;
+            min-height: 60px;
+
+            &:first-of-type {
+                >hgroup {
+                    width: 100%;
+                    min-height: 70px;
+                    @if($flag==1) {@extend %bt};
+                    display: flex;
+                    flex-wrap: wrap;
+                    align-content: center;
+                    justify-content: center;
+
+                    >.row {
+                        >div {
+                            width: 100%;
+
+                            >* {
+                                text-align: center;
+                            }
+
+                            >h3 {
+                                padding-top: 40px;
+                                width: 100%;
+                                font-size: 30px;
+
+                                @if($flag==1) {
+                                    @extend %bt
+                                }
+
+                                ;
+
+                            }
+
+                            >p {
+                                padding-bottom: 40px;
+                                width: 100%;
+                                font-size: 18px;
+                                color: #333333;
+                            }
+                        }
+                    }
+                }
+            }
+
+            &:last-of-type {
+                .row {
+                    justify-content: space-between;
+                    padding: 50px 40px;
+
+                    >figure {
+                        >img {
+                            width: 239px;
+                            height: 287px;
+                            border-radius: 8px;
+                        }
+
+                        >figcaption {
+                            text-align: center;
+                            font-size: 20px;
+                            margin-top: 10px;
+
+                            >h4 {
+                                margin-top: 10px;
+                                font-size: 15px;
+                                color: #FE475C;
+                            }
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+}
+
+// end of team--
+
+.quality {
+    width: 100%;
+    background-color: #F7F7F7;
+
+    >.row {
+        padding: 0 40px;
+
+        >* {
+            margin: 40px 0;
+            @if($flag==1) {@extend %bt};
+            min-height: 100px;
+            width: 50%;
+
+        }
+
+        >figure {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            >img {
+                width: 450px;
+                height: 500px;
+            }
+
+        }
+
+        >div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            >.row {
+                padding: 0 30px;
+
+                >* {
+                    width: 100%;
+                }
+
+                >h2 {
+                    font-size: 32.31px;
+                }
+
+                >p {
+                    margin: 30px 0;
+                    font-size: 14px;
+                    color: #333333;
+                    line-height: 25px;
+                }
+
+                ul>li {
+                    line-height: 40px;
+                    font-size: 16px;
+                    >span{
+                        font-size: 16px;
+                        color: #FE475C;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+// -------blog----
+.blog {
+    width: 100%;
+
+    >.row {
+        >div {
+            width: 100%;
+            @if($flag==1) {@extend %bt};
+            display: flex;
+            flex-wrap: wrap;
+            align-content: center;
+
+            &:first-of-type {
+                >.row {
+                    justify-content: center;
+
+                    >div {
+                        width: 50%;
+
+                        >* {
+                            text-align: center;
+                            width: 100%;
+                            @if($flag==1) {@extend %bt};
+
+                        }
+
+                        >h3 {
+                            width: 100%;
+                            font-size: 32.31px;
+                            padding-top: 70px;
+
+                        }
+
+                        >p {
+                            width: 100%;
+                            font-size: 16.05px;
+                            color: #333333;
+                            line-height: 20px;
+                            padding-top: 30px;
+                            padding-bottom: 70px;
+                        }
+
+                    }
+                }
+            }
+
+            &:last-of-type {
+                justify-content: center;
+                @if($flag==1) {@extend %bt};
+                >.row {
+                    margin-bottom: 30px;
+                    width: 28%;
+                    justify-content: space-between;
+                    padding-left: 30px;
+
+                    >figure {
+                        >img {
+                            width: 100%;
+                        }
+
+                    }
+
+                    >hgroup {
+                      >.row{
+                        >div{
+                            >*{
+                                padding: 10px 0;
+                                @if($flag==1) {@extend %bt};
+                            }
+                            >h5{
+                                color: #333333;
+                                font-size: 14px;
+                            }
+                            >h3{
+                                font-size: 16px;
+                                >a{
+                                    transition: .4s;
+                                }
+                                &:hover{
+                                    color: #FE475C;
+                                }
+                            }
+    
+                            >p {
+                                font-size: 14px;
+                                line-height: 20px;
+                            }
+                            >a{
+                                text-transform: capitalize;
+                                color: #FE475C;
+                                border-bottom:1px solid #FE475C;
+                            }
+                        }
+
+                      }
+
+                    }
+                }
+
+            }
+        }
+    }
+}
+// ========visit======
+.visit{
+    width: 100%;
+    >.row{
+        justify-content: center;
+        margin: 80px 0;
+        >div{
+            >a{
+                border-radius: 10px;
+                padding: 15px 30px;
+                background-color: #FE475C;
+                color: #F7F7F7;
+                text-transform: capitalize;
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+// =====footer=====
+.footer {
+    width: 100%;
+    overflow-y: hidden;
+
+    >.row {
+        >div {
+            @if($flag==1) {@extend %bt};
+            min-height: 300px;
+            width: 100%;
+            background: #2f2f2f;
+            color: #F7F7F7;
+
+            &:first-of-type {
+                >.row {
+                    >section {
+                        width: 50%;
+
+                        &:first-of-type {
+                            padding: 60px 30px;
+
+                            >hgroup {
+                                >* {
+                                    margin: 30px 0;
+                                }
+
+                                >h2 {
+                                    font-size: 20px;
+                                }
+
+                                >p {
+                                    width: 68%;
+                                    min-height: 20px;
+                                    font-size: 16px;
+                                    color: #9e9e9e;
+                                }
+
+                            }
+                        }
+
+                        &:last-of-type {
+                            >.row {
+                                >div {
+                                    width: 50%;
+                                    @if($flag==1) {@extend %bt};
+
+                                    >* {
+                                        width: 100%;
+                                        min-height: 30px;
+                                    }
+
+                                    &:first-of-type {
+                                        display: flex;
+                                        flex-wrap: wrap;
+                                        align-items: center;
+                                        >*{
+                                            padding-left: 20px;
+                                        }
+                                        >h4{
+                                            font-size: 25px;
+                                            color: white;
+                                        }
+                                        
+                                        >ul>li{
+                                            color: #F7F7F7;
+                                            min-height: 30px;
+                                            &:nth-of-type(1){
+                                                font-size: 30px;
+                                                padding: 20px 0;
+                                            }
+                                            >span{
+                                                font-size: 20px;
+                                                padding-right:20px;
+                                                color: #9e9e9e;
+                                            }
+                                        }
+                                        
+                                    }
+
+                                    &:last-of-type {
+                                        >.row{
+                                            justify-content: center;
+                                            align-content: center;
+                                            position: relative;
+                                            >.card{
+                                                width: 400px;
+                                                height: 200px;
+                                                /* border: 5px solid rgba(255, 255, 255, 0.235); */
+                                                border-radius: 5px;
+                                                background-color: #000000;
+                                                position: absolute;
+                                                top: -60%;
+                                                left: 50%;
+                                                transform: translate(-67%, 35%);
+                                                display: flex;
+                                                flex-wrap: wrap;
+                                                box-shadow: 8px 8px 10px 10px rgb(32, 31, 31);
+                                                padding: 10px;
+                                                >div{
+                                                    width: 60%;
+                                                    height: 100%;
+                                                    display: flex;
+                                                    flex-wrap: wrap;
+                                                    >.c1{
+                                                        width: 70%;
+                                                        height: 100%;
+                                                        >img{
+                                                            border-radius: 50% 50% 80% 20% / 26% 54% 46% 74% ;
+                                                            width: 80%;
+                                                            height: 77%;
+                                                            background-size:cover;
+                                                            background-position: left;
+                                                            
+                                                            
+                                                            }
+                                                            >div>svg{
+                                                                width: 100%;
+                                                                height: 20%;
+                                                                font-family: 'Times New Roman', Times, serif;
+                                                                font-size: 22px;
+                                                                text-transform: capitalize;
+                                                                font-weight: 700;
+                                                                color:transparent;
+                                                                stroke: rgba(22, 23, 23, 0.769);
+                                                                stroke-width: 1px;
+                                                                fill: transparent;
+                                                                animation: txt infinite linear 3s alternate;
+                                                            }
+                                                        }
+                                                       
+                                                    >.c2{
+                                                        width: 30%;
+                                                        height: 100%;
+                                                        display: flex;
+                                                        flex-wrap: wrap;
+                                                        >span{
+                                                            width: 100%;
+                                                            height: 25%;
+                                                            >a{
+                                                                display: flex;
+                                                                justify-content: center;
+                                                                align-items: center;
+                                                                width: 100%;
+                                                                height: 100%;
+                                                                text-decoration: none;
+                                                                color: rgba(255, 255, 255, 0.591);
+                                                                font-size: 30px;
+                                                            }
+                                                        }
+                                                    }
+                                                    }
+                                                    .id{
+                                                        width: 40%;
+                                                        >span{
+                                                        width: 100%;
+                                                        height: 25%;
+                                                        display: flex;
+                                                        font-family: 'Times New Roman', Times, serif;
+                                                        font-size: 18px;
+                                                        display: flex;
+                                                        color: rgba(255, 255, 255, 0.591);
+                                                        justify-content: flex-start;
+                                                        font-weight: bold;
+                                                        align-items: center;}}
+                                    
+                                                    >.bg{
+                                                    width: 400px;
+                                                    height: 200px;
+                                                    position: absolute;
+                                                    top: 0;left: 0;
+                                                    display: flex;
+                                                    border-radius: 5px;
+                                                    background-color: rgba(116, 175, 227, 0.315);
+                                                    z-index: -2;
+                                                    filter: blur(3);
+                                                    >div{
+                                                        width: 100px;
+                                                        height: 300px;
+                                                        position: absolute;
+                                                        z-index:-3;
+                                                        &:nth-of-type(1){
+                                                        position: absolute;
+                                                        width: 100px;
+                                                        height: 80px;
+                                                        border-radius: 63% 37% 87% 13% / 38% 52% 48% 62% ;
+                                                        top: 35px;
+                                                        left: 100px;
+                                                        background-color:rgba(211, 209, 78, 0.505);
+                                                        box-shadow: 0 0 250px 30px rgb(211, 209, 78);
+                                                        animation: para1 5s infinite alternate linear;
+                                                    }
+                                                    &:nth-of-type(2){
+                                                        width: 190px;
+                                                        height: 100px;
+                                                        border-radius: 35% 65% 48% 52% / 38% 15% 85% 62% ;
+                                                        top: 100px;
+                                                        left: 50px;
+                                                        background-color:rgb(124, 17, 105);
+                                                        box-shadow: 0 0 250px 80px rgb(129, 17, 105);
+                                                        animation: para2 5s infinite alternate linear;
+                                                    }
+                                                    &:nth-of-type(3){
+                                                        width: 180px;
+                                                        height: 120px;
+                                                        border-radius: 35% 65% 48% 52% / 38% 15% 85% 62% ;
+                                                        top: 30px;
+                                                        left: 200px;
+                                                        background-color: rgba(35, 35, 183, 0.484);
+                                                        box-shadow: 0 0 250px 50px rgb(59, 59, 224);
+                                                        animation: para3 5s infinite alternate linear;
+                                                    }
+                                                }
+                                            }
+                                    
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                }
+
+            }
+
+            &:last-of-type {
+                min-height: 30px;
+            }
+
+        }
+    }
+}
+
+.monaID {
+    width: 110px;
+    height: 110px;
+    position: absolute;
+    bottom: 30px;
+    left: 40px;
+    display: flex;
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    > div {
+      width: 100%;
+      height: 100%;
+      background-color:rgba(23, 24, 24, 0.584);
+      border-radius: 33% 67% 32% 68% / 32% 28% 72% 68%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      animation: social 10s ease-in-out infinite alternate;
+      > figure {
+        width: 96%;
+        height: 96%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        cursor: pointer;
+        > img {
+          animation: social2 10s infinite  ease-in-out alternate;
+          width: 100%;
+          height: 100%;
+          z-index: 2;
+        }
+        > figcaption {
+          position: absolute;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          > a {
+            text-decoration: none;
+            color: rgb(177, 160, 160);
+            font-size: 18px;
+            width: 60px;
+            height: 30px;
+            transform: translateX(0) translateY(0);
+            transition: all 0.5s ease-in-out;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            &:nth-of-type(1) {
+              transition-delay: 0;
+            }
+            &:nth-of-type(2) {
+              transition-delay: 0.2s;
+            }
+            &:nth-of-type(3) {
+              transition-delay: 0.4s;
+            }
+            &:nth-of-type(4) {
+              transition-delay: 0.6s;
+            }
+          }
+        }
+        &:hover {
+          > figcaption {
+            > a {
+              transform: translateX(100px) translateY(0);
+              color: rgb(11, 126, 192);
+            }
+          }
+        }
+      }
+    }
+  }
+
+@keyframes social {
+0% {
+  border-radius: 51% 49% 37% 63% / 63% 60% 40% 37%;
+}
+25% {
+  border-radius: 68% 32% 59% 41% / 63% 60% 40% 37%;
+}
+50% {
+  border-radius: 49% 51% 69% 31% / 40% 50% 50% 60%;
+}
+75% {
+  border-radius: 58% 42% 47% 53% / 66% 56% 44% 34%;
+}
+100% {
+  border-radius: 40% 60% 62% 38% / 56% 40% 60% 44%;
+}
+}
+@keyframes social2 {
+0% {
+  border-radius: 52% 48% 41% 59% / 35% 40% 60% 65%;
+}
+25% {
+  border-radius: 68% 32% 52% 48% / 55% 48% 52% 45%;
+}
+50% {
+  border-radius: 58% 42% 37% 63% / 40% 65% 35% 60%;
+}
+75% {
+  border-radius: 45% 55% 55% 45% / 58% 48% 52% 42%;
+}
+100% {
+  border-radius: 68% 32% 59% 41% / 63% 60% 40% 37%;
+}
+}
+@keyframes txt {
+    0% {
+        stroke-dasharray: 0px 200px;
+        fill: rgba(226, 234, 5, 0.508);
+    }
+
+    50% {
+        stroke-dasharray: 200px 0px;
+        fill: rgba(232, 221, 8, 0.708);
+    }
+
+    100% {
+        stroke-dasharray: 300px 0px;
+        fill: white;
+    }
+}
+@keyframes para1 {
+    30%{top: 70px;left: 50px;}
+    60%{top: 20px;left: 90px;}
+    100%{top: 50px;left: 20px;}
+    
+}
+@keyframes para2 {
+    30%{top: 90px;left:120px;}
+    60%{top: 50px;left: 220px;}
+    100%{top: 80px;left: 100px;}
+    
+}
+@keyframes para3 {
+    30%{top: 70px;left:220px;}
+    60%{top: 10px;left: 140px;}
+    100%{top: 100px;left: 190px;}
+    
+}
